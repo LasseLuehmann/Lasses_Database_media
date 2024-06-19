@@ -45,8 +45,8 @@ def main():
             os.system('clear')
             print('Input\t| Output\n','-'*25)
             for row in select_by.platform_def(p_choice):
-                #print(f'{row[1]}\t|{row[2]}')
-                print(row)
+                print(f'\n\t\t{p_choice}\n{row[0]}\t|{row[1]}\n')
+                #print(row)
             print('name', '\t'*5,'|publisher\t',' |fsk ','|carrier|genre\n','-'*80)
             for row in select_by.platform_sel(p_choice):
                 name = row[0] + ' '*(40 - len(row[0]))
